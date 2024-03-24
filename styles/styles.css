@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(192, 196, 202);
+}
+
+.skipToMain {
+    position: absolute;
+}
+
+.skipToMain {
+    opacity: 0%;
+}
+
+.skipToMain:focus {
+    opacity: 100%;;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #5B7FFF;
+    border-radius: 12px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+main > * {
+    padding: 15px 0;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 30px;
+    background-color: #5B7FFF
+}
+
+.nav_links li a {
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    background-color: #5B7FFF
+}
+
+.nav_links li a:hover {
+    color: lightcoral;
+    
+}
+.contactButton {
+    border-radius: 50px;
+}
+button {
+    color: aliceblue;
+    padding: 9px;
+    background-color: rgba(38, 29, 96, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(38, 29, 96, 0.5)
+}
+
+.mainImages {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mainImages img {
+    width: 45%;
+    border-radius: 15px;
+    margin: 10px;
+    transition: 400ms;
+}
+
+.mainImages img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+
+}
+
+.shotsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shotsContainer a {
+    display: grid;
+    padding: 10px;
+    justify-items: center;
+}
+
+.shotsContainer img {
+    width: 400px;
+}
+
+.newsContainer {
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+
+.newsContainer a {
+    padding: 10px;
+}
+
+.newsContainer img {
+    width: 100%;
+}
